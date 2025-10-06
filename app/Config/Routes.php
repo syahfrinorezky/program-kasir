@@ -1,13 +1,16 @@
 <?php
 
+use CodeIgniter\Commands\Utilities\Routes;
 use CodeIgniter\Router\RouteCollection;
 
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
-
 // auth routes
+$routes->get('/', 'Auth::login');
+$routes->get('/login', 'Auth::loginAuth');
 $routes->get('/register', 'Auth::register');
 $routes->post('/register', 'Auth::registerSave');
-$routes->get('/login', 'Auth::login');
+
+// admin routes
+$routes->get('/dashboard', 'Dashboard::index');
