@@ -127,3 +127,46 @@ _modules/*
 
 # nodemodules
 node_modules/
+
+#-------------------------
+# Build Output Files
+#-------------------------
+# Generated CSS and JS files
+public/css/output.css
+public/js/bundle.js
+
+#-------------------------
+# Additional Editor Files
+#-------------------------
+# Vim
+*.swp
+*.swo
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Zed
+.zed/
+
+#-------------------------
+# Additional PHP Files
+#-------------------------
+*.phar
+.phpunit.result.cache
+
+#-------------------------
+# Additional Environment Files
+#-------------------------
+.env.local
+.env.development
+.env.test
+.env.production
+
+#-------------------------
+# Additional MacOS Files
+#-------------------------
+.DS_Store?
+.Spotlight-V100
+.Trashes
