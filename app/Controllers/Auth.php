@@ -31,7 +31,7 @@ class Auth extends BaseController
             return redirect()->back()->withInput()->with('errors', $model->errors());
         }
 
-        return redirect()->to('/login')->with('success', 'Pendaftaran berhasil, silakan login.');
+        return redirect()->to('/')->with('success', 'Pendaftaran berhasil, silakan login.');
     }
 
 
